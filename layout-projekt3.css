@@ -1,0 +1,163 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+*{list-style-type: none;
+  font-family: "Jost", sans-serif;
+}
+
+img {
+    width: 100%;
+    border-radius: 1vh;
+    padding-bottom: 0.5vh;
+    padding-top: 0.1vh;
+    height: 100%;
+}
+
+ #footer2{
+         max-width: 350px;
+    max-height: 250px;
+     border-radius: 5px;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+body {
+  margin: 20px;
+  font-family: 'Open Sans', 'sans-serif';
+  background-color: #000000;
+  color: #444;
+}
+
+h2,h1, p {
+  margin: 0 0 1em 0;
+}
+
+.wrapper {
+  max-width: 1650px;
+  margin: 0 20px;
+  display: grid;
+  grid-gap: 40px;
+}
+
+@media screen and (min-width: 500px) {
+
+  /* no grid support? */
+  .sidebar {
+    float: left;
+    width: 19.1489%;
+      border-right-width: 0px;
+border-right-style: solid;
+margin-right: -18px;
+margin-bottom: 80px;
+  }
+
+  .content {
+    float: right;
+    width: 79.7872%;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .header, .footer {
+    grid-column: 1 / -1;
+    /* needed for the floated layout */
+    clear: both;
+  }
+}
+
+.wrapper > * {
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  /* needed for the floated layout*/
+  margin-bottom: 10px;
+}
+
+/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+
+
+@supports (display: grid) {
+  .wrapper > * {
+    width: auto;
+    margin: 0;
+      font-size: 1em;
+  }
+
+    img{margin-right: 267px;
+}
+
+
+
+    }
+
+@media screen and (max-width: 1200px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+#container2 {
+        display:grid;
+    flex-direction: column;
+        justify-items: center;
+        margin-top: 50px;
+    }
+
+#container {
+        display:flex;
+    flex-direction: column;
+        justify-items: center;
+        margin-top: 100px;
+    }
+
+
+.button {
+  background-color: #b9b3b3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    margin-bottom: 50px;
+}
+
+
+/*
+@media screen and (min-width: 1700px) {
+    .content1{
+        margin-left: 140px
+    }
+    .sidebar1{
+        padding-right: 3px;
+        margin-right: -141px;
+    }
+}
+*/
+*/
+/*
+
+@media screen and (min-width: 1700px) {
+    img{
+        max-height:;
+        max-width: ;
+    }
+*/
+
+
